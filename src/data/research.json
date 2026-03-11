@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "title": "Advances in CRISPR Gene Editing",
+    "category": "Genetics",
+    "specialty": "Molecular Biology",
+    "author": "Dr. Sarah Chen",
+    "date": "2023-10-15",
+    "abstract": "Recent developments in CRISPR-Cas9 technology have improved precision and reduced off-target effects...",
+    "content": "Full content of the research study goes here...",
+    "tags": ["CRISPR", "Genetics", "Biotechnology"]
+  },
+  {
+    "id": "2",
+    "title": "Neurological Impact of Long-COVID",
+    "category": "Medicine",
+    "specialty": "Neurology",
+    "author": "Dr. Marcus Thorne",
+    "date": "2023-11-02",
+    "abstract": "This study examines the long-term cognitive effects of SARS-CoV-2 infection on adult patients...",
+    "content": "Full content of the research study goes here...",
+    "tags": ["COVID-19", "Neurology", "Brain Health"]
+  },
+  {
+    "id": "3",
+    "title": "Renewable Energy Storage Solutions",
+    "category": "Engineering",
+    "specialty": "Environmental Science",
+    "author": "Ing. Elena Rossi",
+    "date": "2023-09-20",
+    "abstract": "Analysis of next-generation battery technologies for grid-scale renewable energy storage...",
+    "content": "Full content of the research study goes here...",
+    "tags": ["Energy", "Sustainability", "Batteries"]
+  },
+  {
+    "id": "4",
+    "title": "Immunotherapy in Oncology: A Review",
+    "category": "Medicine",
+    "specialty": "Oncology",
+    "author": "Dr. James Wilson",
+    "date": "2023-12-05",
+    "abstract": "Evaluating the efficacy of checkpoint inhibitors in various solid tumor treatments...",
+    "content": "Full content of the research study goes here...",
+    "tags": ["Cancer", "Immunotherapy", "Oncology"]
+  },
+  {
+    "id": "5",
+    "title": "Quantum Computing in Drug Discovery",
+    "category": "Technology",
+    "specialty": "Pharmacology",
+    "author": "Dr. Akiko Tanaka",
+    "date": "2024-01-10",
+    "abstract": "How quantum algorithms are accelerating the simulation of molecular interactions for new drug leads...",
+    "content": "Full content of the research study goes here...",
+    "tags": ["Quantum Computing", "Pharma", "Simulation"]
+  }
+]
