@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, User, Tag, ChevronLeft, Download, Share2 } from 'lucide-react';
-import researchData from '../data/research.json';
+import researchData from '../../data/research.json';
 
 const ResearchDetail = () => {
   const { id } = useParams();

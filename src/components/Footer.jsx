@@ -14,8 +14,17 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li><Link to="/library">Research Library</Link></li>
-            <li><Link to="/category/Medicine">Medical Research</Link></li>
-            <li><Link to="/">Latest Studies</Link></li>
+            <li><Link to="/categories">Scientific Categories</Link></li>
+            <li><Link to="/latest">Latest Studies</Link></li>
+            <li><Link to="/featured">Featured Research</Link></li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h4>Information</h4>
+          <ul>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/contact">Contact & Support</Link></li>
+            <li><Link to="/login">Admin Login</Link></li>
           </ul>
         </div>
         <div className="footer-section">

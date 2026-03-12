@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Library, Home, Beaker, Stethoscope } from 'lucide-react';
+import { Library, Home, Beaker, Stethoscope, Info, Mail, User } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -20,10 +20,10 @@ const Navbar = () => {
             <span>Library</span>
           </Link>
           <div className="dropdown">
-            <span className="nav-item">
+            <Link to="/categories" className="nav-item">
               <Beaker size={18} />
               <span>Categories</span>
-            </span>
+            </Link>
             <div className="dropdown-content">
               <Link to="/category/Genetics">Genetics</Link>
               <Link to="/category/Medicine">Medicine</Link>
@@ -43,6 +43,18 @@ const Navbar = () => {
               <Link to="/specialty/Molecular%20Biology">Molecular Biology</Link>
             </div>
           </div>
+          <Link to="/about" className="nav-item">
+            <Info size={18} />
+            <span>About</span>
+          </Link>
+          <Link to="/contact" className="nav-item">
+            <Mail size={18} />
+            <span>Contact</span>
+          </Link>
+          <Link to="/admin" className="nav-item admin-link">
+            <User size={18} />
+            <span>Admin</span>
+          </Link>
         </div>
       </div>
     </nav>

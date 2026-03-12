@@ -8,7 +8,8 @@
     "date": "2023-10-15",
     "abstract": "Recent developments in CRISPR-Cas9 technology have improved precision and reduced off-target effects...",
     "content": "Full content of the research study goes here...",
-    "tags": ["CRISPR", "Genetics", "Biotechnology"]
+    "tags": ["CRISPR", "Genetics", "Biotechnology"],
+    "featured": true
   },
   {
     "id": "2",
@@ -19,7 +20,8 @@
     "date": "2023-11-02",
     "abstract": "This study examines the long-term cognitive effects of SARS-CoV-2 infection on adult patients...",
     "content": "Full content of the research study goes here...",
-    "tags": ["COVID-19", "Neurology", "Brain Health"]
+    "tags": ["COVID-19", "Neurology", "Brain Health"],
+    "featured": true
   },
   {
     "id": "3",
@@ -30,7 +32,8 @@
     "date": "2023-09-20",
     "abstract": "Analysis of next-generation battery technologies for grid-scale renewable energy storage...",
     "content": "Full content of the research study goes here...",
-    "tags": ["Energy", "Sustainability", "Batteries"]
+    "tags": ["Energy", "Sustainability", "Batteries"],
+    "featured": true
   },
   {
     "id": "4",
@@ -41,7 +44,8 @@
     "date": "2023-12-05",
     "abstract": "Evaluating the efficacy of checkpoint inhibitors in various solid tumor treatments...",
     "content": "Full content of the research study goes here...",
-    "tags": ["Cancer", "Immunotherapy", "Oncology"]
+    "tags": ["Cancer", "Immunotherapy", "Oncology"],
+    "featured": false
   },
   {
     "id": "5",
@@ -52,6 +56,7 @@
     "date": "2024-01-10",
     "abstract": "How quantum algorithms are accelerating the simulation of molecular interactions for new drug leads...",
     "content": "Full content of the research study goes here...",
-    "tags": ["Quantum Computing", "Pharma", "Simulation"]
+    "tags": ["Quantum Computing", "Pharma", "Simulation"],
+    "featured": false
   }
 ]

@@ -1,22 +1,22 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import researchData from '../data/research.json';
+import researchData from '../../data/research.json';
 
-const CategoryPage = () => {
-  const { category } = useParams();
-  const filteredData = researchData.filter(item => item.category === category);
+const SpecialtyPage = () => {
+  const { specialty } = useParams();
+  const filteredData = researchData.filter(item => item.specialty === specialty);
 
   return (
     <div className="container">
       <header className="page-header">
-        <h1>{category} Research</h1>
-        <p>Scientific exploration and studies in the field of {category}.</p>
+        <h1>{specialty} Specialty</h1>
+        <p>Focused research and clinical studies within {specialty}.</p>
       </header>
 
       <div className="research-grid">
         {filteredData.map((item) => (
           <Link to={`/research/${item.id}`} key={item.id} className="research-card">
-            <div className="card-badge">{item.specialty}</div>
+            <div className="card-badge">{item.category}</div>
             <h3>{item.title}</h3>
             <p>{item.abstract.substring(0, 150)}...</p>
             <div className="card-footer">
@@ -26,9 +26,9 @@ const CategoryPage = () => {
           </Link>
         ))}
       </div>
-      {filteredData.length === 0 && <p>No research found for this category.</p>}
+      {filteredData.length === 0 && <p>No research found for this specialty.</p>}
     </div>
   );
 };
 
-export default CategoryPage;
+export default SpecialtyPage;
