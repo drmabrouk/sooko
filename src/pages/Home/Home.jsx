@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BookOpen, Star, Clock } from 'lucide-react';
-import Search from '../components/Search';
-import researchData from '../data/research.json';
+import Search from '../../components/Search';
+import initialData from '../../data/research.json';
 
 const Home = () => {
+  const [researchData, setResearchData] = useState([]);
+
+  useEffect(() => {
+    const stored = localStorage.getItem('helthedia_research');
+    if (stored) {
+      setResearchData(JSON.parse(stored));
+    } else {
+      setResearchData(initialData);
+    }
+  }, []);
+
   const featured = researchData.slice(0, 3);
   const latest = researchData.slice(0, 4);
 
@@ -36,8 +47,8 @@ const Home = () => {
                 <h3>{item.title}</h3>
                 <p>{item.abstract.substring(0, 100)}...</p>
                 <div className="card-footer">
-                  <span>{item.author}</span>
-                  <span>{item.date}</span>
+                  <span>{item.author || 'Helthedia Research'}</span>
+                  <span>{item.date || 'New'}</span>
                 </div>
               </Link>
             ))}
@@ -58,7 +69,7 @@ const Home = () => {
               <Link to={`/research/${item.id}`} key={item.id} className="latest-item">
                 <div className="latest-info">
                   <h4>{item.title}</h4>
-                  <span>{item.specialty} • {item.date}</span>
+                  <span>{item.specialty} • {item.date || 'New'}</span>
                 </div>
                 <BookOpen size={20} className="latest-icon" />
               </Link>

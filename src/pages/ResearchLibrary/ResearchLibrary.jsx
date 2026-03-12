@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Filter } from 'lucide-react';
-import researchData from '../data/research.json';
+import initialData from '../../data/research.json';
 
 const ResearchLibrary = () => {
   const [filter, setFilter] = useState('All');
+  const [researchData, setResearchData] = useState([]);
+
+  useEffect(() => {
+    const stored = localStorage.getItem('helthedia_research');
+    if (stored) {
+      setResearchData(JSON.parse(stored));
+    } else {
+      setResearchData(initialData);
+    }
+  }, []);
+
   const categories = ['All', ...new Set(researchData.map(item => item.category))];
 
   const filteredData = filter === 'All'
@@ -44,8 +55,8 @@ const ResearchLibrary = () => {
             <h3>{item.title}</h3>
             <p>{item.abstract.substring(0, 150)}...</p>
             <div className="card-footer">
-              <span>{item.author}</span>
-              <span>{item.date}</span>
+              <span>{item.author || 'Helthedia Research'}</span>
+              <span>{item.date || 'New'}</span>
             </div>
           </Link>
         ))}
